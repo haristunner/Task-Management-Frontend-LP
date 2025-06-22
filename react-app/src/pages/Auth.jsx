@@ -5,11 +5,13 @@ import { Checkbox, Flex, message } from "antd";
 import axios from "axios";
 import { SERVER_BASE_URL } from "../config/vars";
 import { useNavigate } from "react-router-dom";
+import { LoadingOutlined } from "@ant-design/icons";
 
 const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
 const Auth = () => {
   const [messageApi, contextHolder] = message.useMessage();
+  const [btnLoading, setBtnLoading] = useState(false);
 
   const [page, setPage] = useState("signup");
   const [data, setData] = useState({
@@ -39,12 +41,16 @@ const Auth = () => {
         return;
       }
 
+      setBtnLoading(true);
+
       await axios
         .post(`${SERVER_BASE_URL}/auth/register`, {
           email: data?.email,
           password: data?.password,
         })
         .then((response) => {
+          setBtnLoading(false);
+
           if (!response.data?.success) {
             return messageApi.error(response?.data?.message);
           }
@@ -58,11 +64,16 @@ const Auth = () => {
         })
         .catch((error) => {
           console.log(error);
+        })
+        .finally(() => {
+          setBtnLoading(false);
         });
     } else {
       if (!data?.email || !emailRegex.test(data?.email) || !data.password) {
         return;
       }
+
+      setBtnLoading(true);
 
       await axios
         .post(
@@ -74,6 +85,8 @@ const Auth = () => {
           { withCredentials: true }
         )
         .then((response) => {
+          setBtnLoading(false);
+
           if (!response.data?.success) {
             return messageApi.error(response?.data?.message);
           }
@@ -85,6 +98,9 @@ const Auth = () => {
         })
         .catch((error) => {
           console.log(error);
+        })
+        .finally(() => {
+          setBtnLoading(false);
         });
     }
   };
@@ -190,7 +206,7 @@ const Auth = () => {
               </Flex>
 
               <button className="auth_btn" onClick={handleClick}>
-                Sign Up
+                Sign Up {btnLoading ? <LoadingOutlined /> : ""}
               </button>
             </Flex>
           </section>
@@ -256,7 +272,7 @@ const Auth = () => {
               </Flex>
 
               <button className="auth_btn" onClick={handleClick}>
-                Sign In
+                Sign In {btnLoading ? <LoadingOutlined /> : ""}
               </button>
             </Flex>
           </section>

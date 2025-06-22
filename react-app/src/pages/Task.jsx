@@ -16,8 +16,10 @@ import TextField from "../components/TextField";
 import DateInput from "../components/DateInput";
 import { MoreOutlined } from "@ant-design/icons";
 import dayjs from "dayjs";
+import { useNavigate } from "react-router-dom";
 
 const Task = () => {
+  const navigate = useNavigate();
   const [messageApi, contextHolder] = message.useMessage();
 
   const userId = window.localStorage.getItem("userId");
@@ -229,6 +231,11 @@ const Task = () => {
     getAllTasks(page);
   }, [renderState]);
 
+  const logout = async () => {
+    window.localStorage.clear();
+    navigate("/");
+  };
+
   return (
     <div className="task_cont">
       {contextHolder}
@@ -331,6 +338,12 @@ const Task = () => {
         }}
         rowKey={(record) => record?.task_id}
       />
+
+      <div className="logout">
+        <Button size="small" onClick={logout}>
+          Logout
+        </Button>
+      </div>
     </div>
   );
 };

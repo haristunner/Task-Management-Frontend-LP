@@ -14884,3 +14884,923 @@ Response Headers: {"server":"ZGS","date":"Sun, 22 Jun 2025 18:33:46 GMT","conten
 [debug] [2025-06-22T18:33:32.763Z] : Response Body : {"status":"failure","data":{"error_code":"MORE_THAN_MAX_LENGTH","message":"Please check if the length of the input is in the correct range"}}
 
 [debug] [2025-06-22T18:33:32.764Z] : Unable to send debug log to server: HTTP Error: 400, Please check if the length of the input is in the correct range
+[debug] [2025-06-22T18:37:43.809Z] : 
+[debug] [2025-06-22T18:37:43.810Z] : ----------------------------------------------------------------------
+[debug] [2025-06-22T18:37:43.811Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\hari1\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js deploy
+[debug] [2025-06-22T18:37:43.811Z] : CLI Version:  1.18.1
+[debug] [2025-06-22T18:37:43.811Z] : Platform:     win32
+[debug] [2025-06-22T18:37:43.811Z] : Node Version: v20.11.1
+[debug] [2025-06-22T18:37:43.811Z] : Time:         Mon Jun 23 2025 00:07:43 GMT+0530 (India Standard Time)
+[debug] [2025-06-22T18:37:43.811Z] : ----------------------------------------------------------------------
+[debug] [2025-06-22T18:37:43.812Z] : 
+[debug] [2025-06-22T18:37:44.086Z] : > authorizing via signed-in user option
+[debug] [2025-06-22T18:37:44.086Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.webapp.ALL","ZohoCatalyst.appsail.Update"]
+[debug] [2025-06-22T18:37:44.095Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/7942000000015047 
+
+[debug] [2025-06-22T18:37:47.249Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sun, 22 Jun 2025 18:38:00 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2025-06-22T18:37:47.251Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/7942000000015047/environment 
+
+[debug] [2025-06-22T18:37:47.292Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sun, 22 Jun 2025 18:38:00 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[info] [2025-06-22T18:37:47.366Z] : i Plugin : "zcatalyst-cli-plugin-react" is used for client deploy
+[info] [2025-06-22T18:37:47.366Z] : i Building Application...
+[info] [2025-06-22T18:37:48.525Z] : [react-plugin]: Creating an optimized production build...
+[info] [2025-06-22T18:37:50.374Z] : [react-plugin]: Compiled successfully.
+
+[info] [2025-06-22T18:37:50.375Z] : [react-plugin]: File sizes after gzip:
+
+[info] [2025-06-22T18:37:50.420Z] : [react-plugin]:   345.62 kB  build\static\js\main.d85d3a28.js
+[info] [2025-06-22T18:37:50.420Z] : [react-plugin]:   647 B      build\static\css\main.eede96e2.css
+[info] [2025-06-22T18:37:50.420Z] : [react-plugin]:  
+[debug] [2025-06-22T18:37:51.466Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.in/baas/v1/project/7942000000015047/webapp 
+
+[debug] [2025-06-22T18:37:52.989Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sun, 22 Jun 2025 18:38:06 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[info] [2025-06-22T18:37:52.990Z] : 
+[info] [2025-06-22T18:37:52.991Z] : √ client: deploy successful
+[info] [2025-06-22T18:37:52.991Z] : i client: URL => https://task-management-frontend-lp-60033933956.development.catalystserverless.in/app/index.html
+[info] [2025-06-22T18:37:52.991Z] : 
+[info] [2025-06-22T18:37:52.992Z] : √ Catalyst deploy complete!
+[debug] [2025-06-22T18:37:52.992Z] : NO ERRORS REGISTERED
+[debug] [2025-06-22T18:37:52.992Z] : EXEC ENDED with event: deploy, message: success
+[debug] [2025-06-22T18:37:52.993Z] : TOTAL DURATION OF COMMAND EXEC : 8915
+[debug] [2025-06-22T18:37:53.046Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.in/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2025-06-22T18:37:53.531Z] : <<<< HTTP RESPONSE : 400
+Response Headers: {"server":"ZGS","date":"Sun, 22 Jun 2025 18:38:06 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"141","connection":"keep-alive","x-content-type-options":"nosniff","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2025-06-22T18:37:53.531Z] : Response Body : {"status":"failure","data":{"error_code":"MORE_THAN_MAX_LENGTH","message":"Please check if the length of the input is in the correct range"}}
+
+[debug] [2025-06-22T18:37:53.533Z] : Unable to send debug log to server: HTTP Error: 400, Please check if the length of the input is in the correct range
+[info] [2025-06-22T18:51:57.268Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:51:57.714Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:51:57.714Z] : [react-plugin]: [eslint] 
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 230:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T18:51:57.715Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:51:57.715Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T18:52:04.667Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:52:04.969Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:52:04.969Z] : [react-plugin]: [eslint] 
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 230:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T18:52:04.969Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:52:04.969Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T18:52:08.078Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:52:08.375Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:52:08.375Z] : [react-plugin]: [eslint] 
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 230:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T18:52:08.375Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:52:08.376Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T18:52:36.343Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:52:36.674Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:52:36.674Z] : [react-plugin]: [eslint] 
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 230:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T18:52:36.674Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:52:36.675Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T18:52:40.098Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:52:40.442Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:52:40.442Z] : [react-plugin]: [eslint] 
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 230:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T18:52:40.443Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:52:40.443Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T18:53:15.905Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:53:16.366Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:53:16.366Z] : [react-plugin]: [eslint] 
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 230:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T18:53:16.366Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:53:16.366Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T18:53:23.521Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:53:23.928Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:53:23.929Z] : [react-plugin]: [eslint] 
+src\pages\Auth.jsx
+  Line 13:10:  'btnLoading' is assigned a value but never used     no-unused-vars
+  Line 13:22:  'setBtnLoading' is assigned a value but never used  no-unused-vars
+
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 230:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T18:53:23.929Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:53:23.929Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T18:53:33.846Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:53:34.390Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:53:34.390Z] : [react-plugin]: [eslint] 
+src\pages\Auth.jsx
+  Line 13:10:  'btnLoading' is assigned a value but never used  no-unused-vars
+
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 230:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T18:53:34.390Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:53:34.391Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T18:53:38.466Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:53:38.847Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:53:38.847Z] : [react-plugin]: [eslint] 
+src\pages\Auth.jsx
+  Line 13:10:  'btnLoading' is assigned a value but never used  no-unused-vars
+
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 230:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T18:53:38.847Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:53:38.848Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T18:53:44.931Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:53:45.287Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:53:45.287Z] : [react-plugin]: [eslint] 
+src\pages\Auth.jsx
+  Line 13:10:  'btnLoading' is assigned a value but never used  no-unused-vars
+
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 230:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T18:53:45.287Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:53:45.287Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T18:53:48.113Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:53:48.518Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:53:48.518Z] : [react-plugin]: [eslint] 
+src\pages\Auth.jsx
+  Line 13:10:  'btnLoading' is assigned a value but never used  no-unused-vars
+
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 230:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T18:53:48.518Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:53:48.519Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T18:53:52.128Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:53:52.467Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:53:52.467Z] : [react-plugin]: [eslint] 
+src\pages\Auth.jsx
+  Line 13:10:  'btnLoading' is assigned a value but never used  no-unused-vars
+
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 230:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T18:53:52.468Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:53:52.468Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T18:54:00.567Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:54:00.913Z] : [react-plugin]: Failed to compile.
+
+[info] [2025-06-22T18:54:00.913Z] : [react-plugin]: SyntaxError: C:\Users\hari1\Desktop\MY\LemonPay\frontend\react-app\src\pages\Auth.jsx: Unexpected token (204:37)
+  202 |
+  203 |               <button className="auth_btn" onClick={handleClick}>
+> 204 |                 Sign Up {btnLoading? }
+      |                                      ^
+  205 |               </button>
+  206 |             </Flex>
+  207 |           </section>
+[info] [2025-06-22T18:54:38.284Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:54:38.830Z] : [react-plugin]: Failed to compile.
+
+[info] [2025-06-22T18:54:38.831Z] : [react-plugin]: SyntaxError: C:\Users\hari1\Desktop\MY\LemonPay\frontend\react-app\src\pages\Auth.jsx: Unexpected token, expected ":" (204:56)
+  202 |
+  203 |               <button className="auth_btn" onClick={handleClick}>
+> 204 |                 Sign Up {btnLoading? <LoadingOutlined />}
+      |                                                         ^
+  205 |               </button>
+  206 |             </Flex>
+  207 |           </section>
+[info] [2025-06-22T18:54:38.970Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:54:39.517Z] : [react-plugin]: Failed to compile.
+
+[info] [2025-06-22T18:54:39.518Z] : [react-plugin]: [eslint] 
+src\pages\Auth.jsx
+  Line 204:40:  'LoadingOutlined' is not defined  react/jsx-no-undef
+
+Search for the keywords to learn more about each error.
+[info] [2025-06-22T18:54:40.963Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:54:41.403Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:54:41.403Z] : [react-plugin]: [eslint] 
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 230:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T18:54:41.404Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:54:41.404Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T18:54:47.260Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:54:47.703Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:54:47.703Z] : [react-plugin]: [eslint] 
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 230:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T18:54:47.703Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:54:47.703Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T18:54:48.193Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:54:48.449Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:54:48.449Z] : [react-plugin]: [eslint] 
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 230:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T18:54:48.449Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:54:48.449Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T18:54:48.777Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:54:48.959Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:54:48.959Z] : [react-plugin]: [eslint] 
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 230:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T18:54:48.959Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:54:48.959Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T18:54:50.465Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:54:50.855Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:54:50.855Z] : [react-plugin]: [eslint] 
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 230:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T18:54:50.855Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:54:50.856Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T18:54:57.068Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:54:57.519Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:54:57.519Z] : [react-plugin]: [eslint] 
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 230:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T18:54:57.519Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:54:57.519Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T18:55:03.784Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:55:04.154Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:55:04.154Z] : [react-plugin]: [eslint] 
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 230:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T18:55:04.154Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:55:04.154Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T18:55:09.503Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:55:09.834Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:55:09.834Z] : [react-plugin]: [eslint] 
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 230:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T18:55:09.834Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:55:09.834Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T18:55:13.806Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:55:14.075Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:55:14.075Z] : [react-plugin]: [eslint] 
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 230:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T18:55:14.076Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:55:14.076Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T18:55:17.469Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:55:17.746Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:55:17.746Z] : [react-plugin]: [eslint] 
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 230:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T18:55:17.746Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:55:17.746Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T18:55:22.527Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:55:22.826Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:55:22.826Z] : [react-plugin]: [eslint] 
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 230:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T18:55:22.826Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:55:22.826Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T18:55:24.438Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:55:24.781Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:55:24.782Z] : [react-plugin]: [eslint] 
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 230:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T18:55:24.782Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:55:24.782Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T18:56:11.267Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:56:11.762Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:56:11.762Z] : [react-plugin]: [eslint] 
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 230:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T18:56:11.762Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:56:11.762Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T18:56:14.407Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:56:14.807Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:56:14.807Z] : [react-plugin]: [eslint] 
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 230:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T18:56:14.808Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:56:14.808Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T18:56:15.619Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:56:15.974Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:56:15.975Z] : [react-plugin]: [eslint] 
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 230:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T18:56:15.975Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:56:15.975Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T18:56:35.041Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:56:35.584Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:56:35.584Z] : [react-plugin]: [eslint] 
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 230:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T18:56:35.584Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:56:35.584Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T18:56:37.252Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:56:37.637Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:56:37.638Z] : [react-plugin]: [eslint] 
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 230:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T18:56:37.638Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:56:37.638Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T18:56:39.944Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:56:40.341Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:56:40.341Z] : [react-plugin]: [eslint] 
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 230:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T18:56:40.341Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:56:40.341Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T18:56:47.616Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:56:48.037Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:56:48.037Z] : [react-plugin]: [eslint] 
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 230:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T18:56:48.037Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:56:48.037Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T18:56:53.921Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:56:54.284Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:56:54.284Z] : [react-plugin]: [eslint] 
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 230:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T18:56:54.285Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:56:54.285Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T18:56:56.025Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:56:56.401Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:56:56.401Z] : [react-plugin]: [eslint] 
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 230:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T18:56:56.401Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:56:56.401Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T18:56:58.088Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:56:58.285Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:56:58.285Z] : [react-plugin]: [eslint] 
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 230:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T18:56:58.286Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:56:58.286Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T18:56:58.665Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:56:59.000Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:56:59.000Z] : [react-plugin]: [eslint] 
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 230:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T18:56:59.000Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:56:59.001Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T18:57:01.677Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:57:02.013Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:57:02.013Z] : [react-plugin]: [eslint] 
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 230:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T18:57:02.013Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:57:02.013Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T18:57:03.361Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:57:03.774Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:57:03.774Z] : [react-plugin]: [eslint] 
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 230:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T18:57:03.774Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:57:03.775Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T18:57:05.563Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:57:05.896Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:57:05.897Z] : [react-plugin]: [eslint] 
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 230:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T18:57:05.897Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:57:05.897Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T18:57:06.568Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:57:06.935Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:57:06.936Z] : [react-plugin]: [eslint] 
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 230:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T18:57:06.936Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:57:06.936Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T18:57:12.427Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:57:12.834Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:57:12.835Z] : [react-plugin]: [eslint] 
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 230:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T18:57:12.835Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:57:12.835Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T18:57:21.829Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:57:22.241Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:57:22.241Z] : [react-plugin]: [eslint] 
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 230:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T18:57:22.241Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:57:22.241Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T18:57:22.328Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:57:22.710Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:57:22.710Z] : [react-plugin]: [eslint] 
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 230:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T18:57:22.710Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:57:22.710Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T18:57:32.066Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:57:32.468Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:57:32.468Z] : [react-plugin]: [eslint] 
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 230:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T18:57:32.468Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:57:32.469Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T18:57:33.451Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:57:33.825Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:57:33.825Z] : [react-plugin]: [eslint] 
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 230:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T18:57:33.825Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:57:33.825Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T18:57:43.171Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:57:43.359Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:57:43.359Z] : [react-plugin]: [eslint] 
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 230:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T18:57:43.360Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:57:43.360Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T18:57:51.924Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:57:52.335Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:57:52.335Z] : [react-plugin]: [eslint] 
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 22:9:   'navigate' is assigned a value but never used                                                                                no-unused-vars
+  Line 232:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T18:57:52.335Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:57:52.335Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T18:57:57.374Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:57:57.731Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:57:57.731Z] : [react-plugin]: [eslint] 
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 22:9:   'navigate' is assigned a value but never used                                                                                no-unused-vars
+  Line 232:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T18:57:57.732Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:57:57.732Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T18:57:58.911Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:57:59.208Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:57:59.208Z] : [react-plugin]: [eslint] 
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 22:9:   'navigate' is assigned a value but never used                                                                                no-unused-vars
+  Line 232:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T18:57:59.209Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:57:59.209Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T18:58:08.685Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:58:09.256Z] : [react-plugin]: Failed to compile.
+
+[info] [2025-06-22T18:58:09.256Z] : [react-plugin]: [eslint] 
+src\pages\Task.jsx
+  Line 234:18:  'async' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+[info] [2025-06-22T18:58:09.820Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:58:10.186Z] : [react-plugin]: Failed to compile.
+
+[info] [2025-06-22T18:58:10.187Z] : [react-plugin]: [eslint] 
+src\pages\Task.jsx
+  Line 234:18:  'async' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+[info] [2025-06-22T18:58:10.930Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:58:11.274Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:58:11.274Z] : [react-plugin]: [eslint] 
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 22:9:   'navigate' is assigned a value but never used                                                                                no-unused-vars
+  Line 232:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 234:9:  'logout' is assigned a value but never used                                                                                  no-unused-vars
+[info] [2025-06-22T18:58:11.274Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:58:11.275Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T18:58:12.253Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:58:12.599Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:58:12.600Z] : [react-plugin]: [eslint] 
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 22:9:   'navigate' is assigned a value but never used                                                                                no-unused-vars
+  Line 232:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 234:9:  'logout' is assigned a value but never used                                                                                  no-unused-vars
+[info] [2025-06-22T18:58:12.600Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:58:12.600Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T18:58:16.530Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:58:16.952Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:58:16.952Z] : [react-plugin]: [eslint] 
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 22:9:   'navigate' is assigned a value but never used                                                                                no-unused-vars
+  Line 232:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T18:58:16.952Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:58:16.952Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T18:58:20.130Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:58:20.468Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:58:20.468Z] : [react-plugin]: [eslint] 
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 22:9:   'navigate' is assigned a value but never used                                                                                no-unused-vars
+  Line 232:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T18:58:20.469Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:58:20.469Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T18:58:57.048Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:58:57.349Z] : [react-plugin]: Failed to compile.
+
+[info] [2025-06-22T18:58:57.349Z] : [react-plugin]: SyntaxError: C:\Users\hari1\Desktop\MY\LemonPay\frontend\react-app\src\pages\Task.jsx: Unexpected token (236:2)
+  234 |   const logout = async () => {
+  235 |     window.localStorage.
+> 236 |   };
+      |   ^
+  237 |
+  238 |   return (
+  239 |     <div className="task_cont">
+[info] [2025-06-22T18:58:58.708Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:58:59.233Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:58:59.233Z] : [react-plugin]: [eslint] 
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 22:9:   'navigate' is assigned a value but never used                                                                                no-unused-vars
+  Line 232:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T18:58:59.233Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:58:59.233Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T18:59:00.581Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:59:00.971Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:59:00.971Z] : [react-plugin]: [eslint] 
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 22:9:   'navigate' is assigned a value but never used                                                                                no-unused-vars
+  Line 232:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T18:59:00.971Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:59:00.971Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T18:59:09.607Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:59:10.065Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:59:10.065Z] : [react-plugin]: [eslint] 
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 232:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T18:59:10.065Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:59:10.065Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T18:59:12.419Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:59:12.796Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:59:12.796Z] : [react-plugin]: [eslint] 
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 232:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T18:59:12.796Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:59:12.796Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T18:59:59.091Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T18:59:59.553Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T18:59:59.554Z] : [react-plugin]: [eslint] 
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 232:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T18:59:59.554Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T18:59:59.554Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T19:00:05.640Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T19:00:05.926Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T19:00:05.926Z] : [react-plugin]: [eslint] 
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 232:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T19:00:05.926Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T19:00:05.926Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T19:01:38.247Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T19:01:38.795Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T19:01:38.795Z] : [react-plugin]: [eslint] 
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 232:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T19:01:38.795Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T19:01:38.795Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-06-22T19:01:43.178Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T19:01:43.586Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-06-22T19:01:43.586Z] : [react-plugin]: [eslint] 
+src\pages\Task.jsx
+  Line 3:3:    'DatePicker' is defined but never used                                                                                       no-unused-vars
+  Line 6:3:    'Form' is defined but never used                                                                                             no-unused-vars
+  Line 7:3:    'Input' is defined but never used                                                                                            no-unused-vars
+  Line 232:6:  React Hook useEffect has missing dependencies: 'getAllTasks' and 'page'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[info] [2025-06-22T19:01:43.587Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-06-22T19:01:43.587Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+

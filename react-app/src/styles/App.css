@@ -1,5 +1,7 @@
 .app {
   padding: 3rem;
+  background: linear-gradient(135deg, #f5f7ff 0%, #cbd9ff 40%, #2648f1 100%);
+  min-height: 100dvh;
 }
 
 .logo img {
@@ -47,6 +49,10 @@
   margin-top: 0.5rem;
   cursor: pointer;
   font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .task_cont {
@@ -55,6 +61,11 @@
 
 .task_table {
   margin-top: 2rem;
+}
+
+.logout {
+  position: fixed;
+  bottom: 2rem;
 }
 
 @media screen and (max-width: 767px) {
