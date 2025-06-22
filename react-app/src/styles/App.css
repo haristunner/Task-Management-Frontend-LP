@@ -49,6 +49,14 @@
   font-weight: 600;
 }
 
+.task_cont {
+  padding: 2.5rem;
+}
+
+.task_table {
+  margin-top: 2rem;
+}
+
 @media screen and (max-width: 767px) {
   .app {
     padding: 2rem;

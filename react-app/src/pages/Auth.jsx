@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Logo from "../assets/logo.png";
 import TextField from "../components/TextField";
-import { Checkbox, Flex } from "antd";
+import { Checkbox, Flex, message } from "antd";
 import axios from "axios";
 import { SERVER_BASE_URL } from "../config/vars";
 import { useNavigate } from "react-router-dom";
@@ -9,6 +9,8 @@ import { useNavigate } from "react-router-dom";
 const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
 const Auth = () => {
+  const [messageApi, contextHolder] = message.useMessage();
+
   const [page, setPage] = useState("signup");
   const [data, setData] = useState({
     email: undefined,
@@ -43,9 +45,16 @@ const Auth = () => {
           password: data?.password,
         })
         .then((response) => {
-          if (response.data?.success) {
-            setPage("signin");
+          if (!response.data?.success) {
+            return messageApi.error(response?.data?.message);
           }
+
+          setData({
+            email: undefined,
+            password: undefined,
+            confirm_password: undefined,
+          });
+          setPage("signin");
         })
         .catch((error) => {
           console.log(error);
@@ -65,12 +74,14 @@ const Auth = () => {
           { withCredentials: true }
         )
         .then((response) => {
-          if (response.data?.success) {
-            const { user_id, access_token } = response.data?.data;
-            window.localStorage.setItem("userId", user_id);
-            window.localStorage.setItem("accessToken", access_token);
-            return navigate("/task");
+          if (!response.data?.success) {
+            return messageApi.error(response?.data?.message);
           }
+
+          const { user_id, access_token } = response.data?.data;
+          window.localStorage.setItem("userId", user_id);
+          window.localStorage.setItem("accessToken", access_token);
+          return navigate("/task");
         })
         .catch((error) => {
           console.log(error);
@@ -80,6 +91,8 @@ const Auth = () => {
 
   return (
     <div className="app">
+      {contextHolder}
+
       <div className="logo">
         <img src={Logo} alt="Logo" loading="lazy" />
       </div>

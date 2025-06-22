@@ -1,3 +1,4 @@
-const SERVER_BASE_URL = "http://localhost:3002/api";
+const SERVER_BASE_URL =
+  "https://lemonpay-50028715824.development.catalystappsail.in/api";
 
 export { SERVER_BASE_URL };
