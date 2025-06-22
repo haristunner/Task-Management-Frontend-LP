@@ -1,0 +1,9 @@
+.textfield div {
+  margin-top: 0.25rem;
+}
+
+.textfield_error_text {
+  font-size: 0.75rem;
+  color: #e31d23;
+}
+

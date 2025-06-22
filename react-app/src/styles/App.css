@@ -1,0 +1,77 @@
+.app {
+  padding: 3rem;
+}
+
+.logo img {
+  height: 7.5rem;
+}
+
+.auth_cont {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  min-height: 55vh;
+}
+
+.section_1 p {
+  font-size: 2.25rem;
+  letter-spacing: 1px;
+}
+
+.col_yellow {
+  color: #dbd55b;
+}
+
+.section_2 {
+  padding-right: 5rem;
+  min-width: 400px;
+}
+
+.section_2_desc {
+  margin-bottom: 1rem;
+}
+
+.section_2_desc h2 {
+  margin-bottom: 0.5rem;
+}
+
+.auth_anchor {
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+.auth_btn {
+  padding: 0.65rem;
+  border: none;
+  border-radius: 6px;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 767px) {
+  .app {
+    padding: 2rem;
+  }
+
+  .logo {
+    text-align: center;
+  }
+
+  .logo img {
+    height: 6rem;
+  }
+
+  .section_1 {
+    display: none;
+  }
+
+  .section_2 {
+    padding: 2rem 0;
+    min-width: 0;
+  }
+
+  .auth_cont {
+    display: block;
+  }
+}
