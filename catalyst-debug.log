@@ -1,0 +1,85 @@
+[debug] [2025-06-22T13:09:33.558Z] : 
+[debug] [2025-06-22T13:09:33.560Z] : ----------------------------------------------------------------------
+[debug] [2025-06-22T13:09:33.560Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\hari1\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve
+[debug] [2025-06-22T13:09:33.560Z] : CLI Version:  1.18.1
+[debug] [2025-06-22T13:09:33.560Z] : Platform:     win32
+[debug] [2025-06-22T13:09:33.561Z] : Node Version: v20.11.1
+[debug] [2025-06-22T13:09:33.561Z] : Time:         Sun Jun 22 2025 18:39:33 GMT+0530 (India Standard Time)
+[debug] [2025-06-22T13:09:33.561Z] : ----------------------------------------------------------------------
+[debug] [2025-06-22T13:09:33.561Z] : 
+[debug] [2025-06-22T13:09:33.852Z] : > authorizing via signed-in user option
+[debug] [2025-06-22T13:09:33.852Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.apigateway.apis.READ","ZohoCatalyst.apigateway.READ","ZohoCatalyst.segments.ALL","ZohoCatalyst.cache.READ","ZohoCatalyst.cache.CREATE","ZohoCatalyst.cache.DELETE","ZohoCatalyst.projects.ALL","ZohoCatalyst.cron.ALL","ZohoCatalyst.zcql.CREATE","ZohoCatalyst.projects.users.READ","ZohoCatalyst.projects.users.CREATE","ZohoCatalyst.projects.users.DELETE","ZohoCatalyst.projects.users.UPDATE","ZohoCatalyst.authentication.CREATE","ZohoCatalyst.email.CREATE","ZohoCatalyst.tables.ALL","ZohoCatalyst.tables.rows.ALL","ZohoCatalyst.tables.columns.ALL","ZohoCatalyst.tables.bulk.CREATE","ZohoCatalyst.tables.bulk.READ","ZohoCatalyst.folders.ALL","ZohoCatalyst.files.CREATE","ZohoCatalyst.files.READ","ZohoCatalyst.files.DELETE","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.eventlistners.ALL","ZohoCatalyst.eventlisteners.produce","ZohoCatalyst.security.rules.Read","ZohoCatalyst.security.rules.Update","ZohoCatalyst.notifications.mobile","ZohoCatalyst.notifications.web","ZohoCatalyst.search.READ","ZohoCatalyst.mlkit.READ","QuickML.deployment.READ","ZohoCatalyst.pdfshot.execute","ZohoCatalyst.circuits.execution.DELETE","ZohoCatalyst.circuits.execution.READ","ZohoCatalyst.circuits.execute","ZohoCatalyst.appsail.Read","ZohoCatalyst.jobpool.READ","ZohoCatalyst.job.ALL","ZohoCatalyst.nosql.READ","ZohoCatalyst.nosql.rows.ALL"]
+[debug] [2025-06-22T13:09:33.863Z] : > refreshing access token <
+[debug] [2025-06-22T13:09:33.864Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.in/oauth/v2/token 
+<request body omitted>
+
+[debug] [2025-06-22T13:09:34.075Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sun, 22 Jun 2025 13:09:47 GMT","content-type":"application/json;charset=UTF-8","content-length":"2392","connection":"keep-alive","cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2025-06-22T13:09:34.081Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/7942000000015047 
+
+[debug] [2025-06-22T13:09:34.216Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sun, 22 Jun 2025 13:09:47 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2025-06-22T13:09:34.217Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/7942000000015047/environment 
+
+[debug] [2025-06-22T13:09:34.269Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sun, 22 Jun 2025 13:09:47 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2025-06-22T13:09:34.524Z] : No basic functions to add
+[info] [2025-06-22T13:09:38.907Z] : [react-plugin]: Starting the development server...
+
+[info] [2025-06-22T13:09:38.909Z] : 
+[info] [2025-06-22T13:09:38.909Z] : i Client[react-app]: Plugin : "zcatalyst-cli-plugin-react" is used for client serve
+[info] [2025-06-22T13:09:38.909Z] : 
+[info] [2025-06-22T13:09:40.674Z] : 
+[info] [2025-06-22T13:09:40.674Z] :  >>>>>>>>>>>>> Web Client <<<<<<<<<<<<
+[info] [2025-06-22T13:09:40.675Z] : i client[react-app]: http://localhost:3000/app/
+[info] [2025-06-22T13:09:40.675Z] : 
+[info] [2025-06-22T13:09:44.837Z] : [react-plugin]: Compiled successfully!
+[info] [2025-06-22T13:09:44.837Z] : [react-plugin]: 
+[info] [2025-06-22T13:09:44.837Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2025-06-22T13:09:44.837Z] : [react-plugin]: 
+[info] [2025-06-22T13:09:44.838Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2025-06-22T13:09:44.838Z] : [react-plugin]:   On Your Network:  http://192.168.1.6:3000/app/
+[info] [2025-06-22T13:09:44.838Z] : [react-plugin]: 
+[info] [2025-06-22T13:09:44.838Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2025-06-22T13:09:44.838Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2025-06-22T13:09:44.838Z] : [react-plugin]: 
+[info] [2025-06-22T13:09:48.056Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T13:09:48.184Z] : [react-plugin]: Compiled successfully!
+[info] [2025-06-22T13:09:48.184Z] : [react-plugin]: 
+[info] [2025-06-22T13:09:48.184Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2025-06-22T13:09:48.184Z] : [react-plugin]: 
+[info] [2025-06-22T13:09:48.184Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2025-06-22T13:09:48.184Z] : [react-plugin]:   On Your Network:  http://192.168.1.6:3000/app/
+[info] [2025-06-22T13:09:48.185Z] : [react-plugin]: 
+[info] [2025-06-22T13:09:48.185Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2025-06-22T13:09:48.185Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2025-06-22T13:09:48.185Z] : [react-plugin]: 
+[info] [2025-06-22T13:09:52.571Z] : [react-plugin]: Compiling...
+[info] [2025-06-22T13:09:52.659Z] : [react-plugin]: Compiled successfully!
+[info] [2025-06-22T13:09:52.659Z] : [react-plugin]: 
+[info] [2025-06-22T13:09:52.659Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2025-06-22T13:09:52.659Z] : [react-plugin]: 
+[info] [2025-06-22T13:09:52.659Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2025-06-22T13:09:52.659Z] : [react-plugin]:   On Your Network:  http://192.168.1.6:3000/app/
+[info] [2025-06-22T13:09:52.659Z] : [react-plugin]: 
+[info] [2025-06-22T13:09:52.659Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2025-06-22T13:09:52.659Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2025-06-22T13:09:52.660Z] : [react-plugin]: 
+[info] [2025-06-22T13:09:58.266Z] : Shutting down server
+[info] [2025-06-22T13:09:58.270Z] : 
+[info] [2025-06-22T13:09:58.271Z] : √ Shutdown complete
+[debug] [2025-06-22T13:09:58.271Z] : NO ERRORS REGISTERED
+[debug] [2025-06-22T13:09:58.271Z] : EXEC ENDED with event: serve, message: success
+[debug] [2025-06-22T13:09:58.272Z] : TOTAL DURATION OF COMMAND EXEC : 24432
+[debug] [2025-06-22T13:09:58.318Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.in/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2025-06-22T13:09:58.950Z] : <<<< HTTP RESPONSE : 400
+Response Headers: {"server":"ZGS","date":"Sun, 22 Jun 2025 13:10:12 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"141","connection":"keep-alive","x-content-type-options":"nosniff","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2025-06-22T13:09:58.951Z] : Response Body : {"status":"failure","data":{"error_code":"MORE_THAN_MAX_LENGTH","message":"Please check if the length of the input is in the correct range"}}
+
+[debug] [2025-06-22T13:09:58.952Z] : Unable to send debug log to server: HTTP Error: 400, Please check if the length of the input is in the correct range

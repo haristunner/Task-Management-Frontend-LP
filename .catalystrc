@@ -1,0 +1,30 @@
+{
+  "defaults": {
+    "project": 1,
+    "env": 1
+  },
+  "actives": {
+    "project": 1,
+    "env": 1
+  },
+  "projects": [
+    {
+      "idx": 1,
+      "id": "7942000000015047",
+      "name": "Task-Management-Frontend-LP",
+      "domain": {
+        "id": "50028720436",
+        "name": "task-management-frontend-lp-60033933956.development"
+      },
+      "timezone": "Asia/Kolkata",
+      "env": [
+        {
+          "idx": 1,
+          "id": "60033933956",
+          "name": "Development",
+          "type": 3
+        }
+      ]
+    }
+  ]
+}
